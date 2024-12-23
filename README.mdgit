@@ -1,0 +1,1 @@
+"# CandleNuts-WIA2001-Group-Project"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/WenYang-Heng/CandleNuts-WIA2001-Group-Project.gitgit push -u origin main
