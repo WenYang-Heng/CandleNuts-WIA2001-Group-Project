@@ -1,4 +1,3 @@
--- Insert into Product
 INSERT INTO Product (product_name, material_name, product_price, weight_per_unit) VALUES
 ('Vanilla Scented Candle', 'Paraffin Wax', 25.99, 0.5),
 ('Lavender Soy Candle', 'Soy Wax', 30.50, 0.6),
@@ -9,20 +8,58 @@ INSERT INTO Product (product_name, material_name, product_price, weight_per_unit
 ('Christmas Gift Set', 'Paraffin Wax', 45.99, 1.0),
 ('Ocean Breeze Candle', 'Soy Wax', 29.90, 0.65),
 ('Coffee Bean Candle', 'Paraffin Wax', 31.20, 0.55),
-('Floral Blossom Candle', 'Beeswax', 33.80, 0.7);
+('Floral Blossom Candle', 'Beeswax', 33.80, 0.7),
+('Fresh Linen Candle', 'Soy Wax', 26.50, 0.5),
+('Tropical Mango Candle', 'Paraffin Wax', 28.75, 0.6),
+('Vanilla Lavender Candle', 'Beeswax', 36.20, 0.65),
+('Pumpkin Spice Candle', 'Soy Wax', 25.30, 0.55),
+('Pine Forest Candle', 'Paraffin Wax', 23.50, 0.5),
+('Jasmine Blossom Candle', 'Beeswax', 32.90, 0.7),
+('Peach Nectar Candle', 'Soy Wax', 29.99, 0.6),
+('Midnight Rose Candle', 'Paraffin Wax', 30.40, 0.65),
+('Citrus Zest Candle', 'Beeswax', 27.80, 0.6),
+('Herbal Mint Candle', 'Soy Wax', 28.70, 0.5);
 
--- Insert into Delivery_Partner
 INSERT INTO Delivery_Partner (partner_name, email, service_area, vehicles, contact_number, partnership_date) VALUES
 ('Express Deliveries', 'contact@expressdeliveries.com', 'Nationwide', 'Truck, Van', '012-3456789', TO_DATE('2022-01-10', 'YYYY-MM-DD')),
 ('Swift Logistics', 'support@swiftlogistics.com', 'Local', 'Motorbike', '011-2233445', TO_DATE('2021-09-15', 'YYYY-MM-DD')),
 ('Green Wheels', 'info@greenwheels.com', 'Nationwide', 'Electric Van', '013-5678901', TO_DATE('2023-03-05', 'YYYY-MM-DD')),
 ('Blue Ribbon Transport', 'service@blueribbon.com', 'Local', 'Van', '014-4455667', TO_DATE('2022-06-20', 'YYYY-MM-DD')),
-('Urban Movers', 'hello@urbanmovers.com', 'Citywide', 'Bike, Van', '016-7788990', TO_DATE('2021-11-25', 'YYYY-MM-DD'));
+('Urban Movers', 'hello@urbanmovers.com', 'Citywide', 'Bike, Van', '016-7788990', TO_DATE('2021-11-25', 'YYYY-MM-DD')),
+('Silver Express', 'contact@silverexpress.com', 'Nationwide', 'Truck', '015-2233445', TO_DATE('2022-03-01', 'YYYY-MM-DD')),
+('Metro Logistics', 'service@metrologistics.com', 'Local', 'Van', '010-5566778', TO_DATE('2023-07-10', 'YYYY-MM-DD')),
+('EcoTransport', 'info@ecotransport.com', 'Nationwide', 'Electric Bike', '019-3344556', TO_DATE('2022-10-15', 'YYYY-MM-DD')),
+('Rapid Move', 'support@rapidmove.com', 'Local', 'Motorbike', '017-9988776', TO_DATE('2021-12-12', 'YYYY-MM-DD')),
+('Speedy Couriers', 'help@speedycouriers.com', 'Citywide', 'Van, Truck', '018-2233446', TO_DATE('2023-01-20', 'YYYY-MM-DD')),
+('Priority Shippers', 'contact@priorityshippers.com', 'Nationwide', 'Truck', '012-6677889', TO_DATE('2022-05-14', 'YYYY-MM-DD')),
+('ParcelXpress', 'info@parcelxpress.com', 'Local', 'Bike', '013-7788990', TO_DATE('2021-08-30', 'YYYY-MM-DD')),
+('Velocity Movers', 'hello@velocitymovers.com', 'Nationwide', 'Truck, Electric Van', '010-1122334', TO_DATE('2023-04-18', 'YYYY-MM-DD')),
+('BlueStar Delivery', 'support@bluestardelivery.com', 'Local', 'Van', '017-5566777', TO_DATE('2022-09-09', 'YYYY-MM-DD')),
+('Ace Couriers', 'info@acecouriers.com', 'Citywide', 'Bike', '016-4455667', TO_DATE('2021-06-25', 'YYYY-MM-DD')),
+('JetPack Movers', 'contact@jetpackmovers.com', 'Nationwide', 'Van, Truck', '018-3344557', TO_DATE('2022-11-11', 'YYYY-MM-DD')),
+('Urban Runners', 'help@urbanrunners.com', 'Citywide', 'Electric Bike', '014-5566778', TO_DATE('2023-02-01', 'YYYY-MM-DD')),
+('Smart Shippers', 'info@smartshippers.com', 'Nationwide', 'Truck', '015-6677888', TO_DATE('2022-07-19', 'YYYY-MM-DD')),
+('QuickLine Transport', 'service@quickline.com', 'Local', 'Bike', '019-1122334', TO_DATE('2021-05-30', 'YYYY-MM-DD')),
+('EcoLogistics', 'hello@ecologistics.com', 'Nationwide', 'Electric Truck', '010-2233445', TO_DATE('2023-06-10', 'YYYY-MM-DD'));
 
--- Insert into Supplier
 INSERT INTO Supplier (supplier_name, contact_number, email, address, city) VALUES
 ('Candle Wax Supplies', '017-1112233', 'sales@waxsupplies.com', '123 Wax St', 'Kuala Lumpur'),
 ('Essential Oils Co.', '018-3344556', 'orders@essentialoils.com', '56 Aroma Lane', 'Selangor'),
 ('Wick & Thread', '019-6677889', 'support@wickthread.com', '78 Fiber Road', 'Penang'),
 ('Glass Jar Industries', '010-9988776', 'info@glassjarind.com', '45 Clear Blvd', 'Johor Bahru'),
-('Color and Dye Ltd.', '013-5566778', 'contact@colordye.com', '99 Shade Street', 'Melaka');
+('Color and Dye Ltd.', '013-5566778', 'contact@colordye.com', '99 Shade Street', 'Melaka'),
+('Natural Wax Depot', '012-7788991', 'info@naturalwaxdepot.com', '123 Eco Lane', 'Kuala Lumpur'),
+('Fragrance Labs', '011-3344556', 'support@fragrancelabs.com', '65 Aroma Blvd', 'Selangor'),
+('Fiber Wax Ltd.', '019-7788992', 'orders@fiberwax.com', '80 Thread Ave', 'Penang'),
+('ClearGlass Supply Co.', '010-9988777', 'contact@clearglass.com', '50 Clear Way', 'Johor Bahru'),
+('Bright Colors Ltd.', '013-6677889', 'info@brightcolors.com', '101 Dye Road', 'Melaka'),
+('EcoWick Co.', '017-2233445', 'sales@ecowick.com', '145 Green St', 'Kuala Lumpur'),
+('AromaWorks', '012-4455667', 'info@aromaworks.com', '22 Fragrance Lane', 'Selangor'),
+('FiberGlass Co.', '011-2233446', 'orders@fiberglassco.com', '90 Transparent Blvd', 'Penang'),
+('Dynamic Colors', '019-5566778', 'support@dynamiccolors.com', '35 Hue Lane', 'Johor Bahru'),
+('Essential Threads', '010-1122335', 'contact@essentialthreads.com', '67 Fiber Row', 'Melaka'),
+('Natural Color Co.', '013-7788993', 'info@naturalcolor.com', '89 Shade Lane', 'Kuala Lumpur'),
+('Glow Wax Industries', '017-3344557', 'support@glowwax.com', '44 Shine St', 'Selangor'),
+('WaxPro Supplies', '012-5566778', 'orders@waxpro.com', '92 Wax Blvd', 'Penang'),
+('Scent & Co.', '011-4455668', 'info@scentco.com', '75 Aroma Road', 'Johor Bahru'),
+('Fusion Colors', '019-2233447', 'contact@fusioncolors.com', '100 Dye Lane', 'Melaka');
