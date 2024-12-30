@@ -1,0 +1,1 @@
+ALTER TABLE Employee DROP COLUMN branch_id;
