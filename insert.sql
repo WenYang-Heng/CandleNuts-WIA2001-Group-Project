@@ -153,3 +153,360 @@ INSERT INTO Employee (employee_name, role_type, email, salary, hire_date, contac
 INSERT INTO Employee (employee_name, role_type, email, salary, hire_date, contact_number) VALUES
 ('Ethan Yeo', 'Operations Manager', 'ethan.yeo@candlenuts.com', 6200.00, DATE '2018-09-15', '0129874444');
 
+
+
+-- Inventory Raw Material
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Color and Dye Ltd%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Farah Aqilah%'),
+'Red Dye', 0.02, 20.00, 2.00);
+     
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Color and Dye Ltd%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Farah Aqilah%'),
+'Blue Dye', 0.02, 25.00, 2.50);
+     
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Color and Dye Ltd%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Farah Aqilah%'),
+'Yellow Dye', 0.03, 30.00, 3.00);
+     
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Candle Wax Supplies%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Soy Wax', 0.50, 500.00, 50.00);
+     
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Candle Wax Supplies%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Beeswax', 0.60, 600.00, 60.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Candle Wax Supplies%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Palm Wax', 0.65, 650.00, 65.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Candle Wax Supplies%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Paraffin Wax', 0.55, 550.00, 55.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Candle Wax Supplies%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Gel Wax', 0.70, 700.00, 70.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight)
+VALUES((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Essential Oils Co.%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Muhammad Arif%'),
+'Lavender Oil', 0.05, 50.00, 5.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Essential Oils Co.%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Muhammad Arif%'),
+'Rosemary Oil', 0.05, 55.00, 5.50);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Essential Oils Co.%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Muhammad Arif%'),
+'Peppermint Oil', 0.06, 60.00, 6.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Essential Oils Co.%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Muhammad Arif%'),
+'Tea Tree Oil', 0.04, 40.00, 4.00);
+     
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Glass Jar Industries%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%William Chan%'),
+'Glass Jars', 0.30, 300.00, 30.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Glass Jar Industries%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%William Chan%'),
+'Metal Lids', 0.20, 200.00, 20.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Candle Wax Supplies%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Coconut Wax', 0.60, 600.00, 60.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Candle Wax Supplies%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Soy Blend Wax', 0.65, 650.00, 65.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Candle Wax Supplies%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Pillar Wax', 0.70, 700.00, 70.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Candle Wax Supplies%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Container Wax', 0.55, 550.00, 55.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Essential Oils Co.%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Muhammad Arif%'),
+'New Mint Oil', 0.06, 120.00, 6.00);
+
+INSERT INTO Inventory_Raw_Material (supplier_id, employee_id, material_name, weight_per_unit, total_weight, reorder_weight) VALUES
+((SELECT supplier_id FROM Supplier WHERE supplier_name LIKE '%Wick & Thread%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Braided Wick', 0.01, 10.00, 1.00);
+     
+     
+     
+     
+-- Orders
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nur Aisyah%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Mia Ng%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Express Deliveries%'),
+DATE '2024-01-16', 'Pending Payment', 'Online', 'In Transit');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES 
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Wong Siew Li%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Olivia Lee%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Express Deliveries%'),
+DATE '2024-01-17', 'Confirmed Payment', 'Offline', 'Delivered');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES 
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Wong Siew Li%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Mia Ng%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Express Deliveries%'),
+DATE '2024-01-18', 'Pending Payment', 'Online', 'In Transit');
+
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Wong Siew Li%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Charlotte Koh%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Express Deliveries%'),
+DATE '2024-01-19', 'Ready for Shipment', 'Offline', 'In Transit');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES 
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Lee Chee Kiong%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Charlotte Koh%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Express Deliveries%'),
+DATE '2024-01-20', 'Pending Confirmation', 'Online', 'In Transit');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES 
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Rajesh Kumar%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Charlotte Koh%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Express Deliveries%'),
+DATE '2024-01-21', 'Confirmed Payment', 'Online', 'Delivered');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES 
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Preeti Nair%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Mia Ng%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Express Deliveries%'),
+DATE '2024-01-22', 'Payment Failed', 'Offline', 'In Transit');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES 
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Suresh Balakrishnan%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%James Lim%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Urban Movers%'),
+DATE '2024-01-23', 'Pending Payment', 'Online', 'Delivered');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES 
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Preeti Nair%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%James Lim%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Urban Movers%'),
+DATE '2024-01-24', 'Confirmed Payment', 'Offline', 'In Transit');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES 
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Ali Ahmad%'), 
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Charlotte Koh%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Swift Logistics%'), 
+DATE '2024-01-25', 'Shipped', 'Online', 'Delivered');
+
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Wong Siew Li%'), 
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Harper Teoh%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Blue Ribbon Transport%'), 
+DATE '2024-01-26', 'Processing', 'Offline', 'In Transit');
+     
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Ahmad Faiz%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Noah Wilson%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Blue Ribbon Transport%'),
+DATE '2024-01-23', 'Pending Payment', 'Online', 'Delivered');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Preeti Nair%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Noah Wilson%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Blue Ribbon Transport%'),
+DATE '2024-01-24', 'Confirmed Payment', 'Offline', 'In Transit');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Ali Ahmad%'), 
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Isabella Tan%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Green Wheels%'), 
+DATE '2024-01-25', 'Shipped', 'Online', 'Delivered');
+     
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Ahmad Faiz%'), 
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Isabella Tan%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Green Wheels%'), 
+DATE '2024-01-26', 'Processing', 'Offline', 'In Transit');
+
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Hafizah Zahra%'), 
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Ava Zhang%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Swift Logistics%'), 
+DATE '2024-01-27', 'Pending Payment', 'Online', 'Ready to Ship');
+     
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nurul Iman%'),
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Noah Wilson%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Blue Ribbon Transport%'),
+DATE '2024-01-24', 'Confirmed Payment', 'Offline', 'In Transit');
+    
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nurul Iman%'), 
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Isabella Tan%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Green Wheels%'), 
+DATE '2024-01-25', 'Shipped', 'Online', 'Delivered');
+
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nurul Iman%'), 
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Harper Teoh%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Green Wheels%'), 
+DATE '2024-01-26', 'Processing', 'Offline', 'In Transit');
+
+INSERT INTO Orders (customer_id, agent_id, delivery_partner_id, delivery_date, order_status, sales_channel, delivery_status) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nurul Iman%'), 
+(SELECT agent_id FROM Agent WHERE agent_name LIKE '%Ava Zhang%'),
+(SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name LIKE '%Swift Logistics%'), 
+DATE '2024-01-27', 'Pending Payment', 'Online', 'Ready to Ship');
+     
+     
+     
+     
+-- Product Order
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Vanilla Scented Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nur Aisyah')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Mia Ng')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),1);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Rose Beeswax Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Wong Siew Li')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Olivia Lee')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),3);
+    
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Coffee Bean Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Wong Siew Li')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Mia Ng')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),2);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Rose Beeswax Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Wong Siew Li')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Charlotte Koh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),3);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Cinnamon Jar Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Rajesh Kumar')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Charlotte Koh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),5);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Ocean Breeze Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Lee Chee Kiong')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Charlotte Koh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),10);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Ocean Breeze Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Rajesh Kumar')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Charlotte Koh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),5);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Lemon Citronella Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Preeti Nair')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Mia Ng')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),8);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Christmas Gift Set'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Suresh Balakrishnan')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'James Lim')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Urban Movers')),5);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Lemon Citronella Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Preeti Nair')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'James Lim')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Urban Movers')),10);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Lemon Citronella Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Ali Ahmad')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Charlotte Koh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Swift Logistics')),3);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Coffee Bean Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Wong Siew Li')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Harper Teoh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Blue Ribbon Transport')),4);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Cinnamon Jar Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Ahmad Faiz')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Noah Wilson')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Blue Ribbon Transport')),3);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Lemon Citronella Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Preeti Nair')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Noah Wilson')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Blue Ribbon Transport')),9);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Eucalyptus Tea Light'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Ali Ahmad')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Isabella Tan')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Green Wheels')),4);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Cinnamon Jar Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Ahmad Faiz')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Isabella Tan')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Green Wheels')),2);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Eucalyptus Tea Light'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Hafizah Zahra')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Ava Zhang')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Swift Logistics')),5);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Floral Blossom Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nurul Iman')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Noah Wilson')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Blue Ribbon Transport')),10);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Floral Blossom Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nurul Iman')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Isabella Tan')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Green Wheels')),1);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Vanilla Scented Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nurul Iman')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Harper Teoh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Green Wheels')),13);
+
+INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
+((SELECT product_id FROM Product WHERE product_name = 'Coffee Bean Candle'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nurul Iman')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Ava Zhang')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Swift Logistics')),20);
+       
