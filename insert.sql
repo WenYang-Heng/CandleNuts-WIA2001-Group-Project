@@ -509,4 +509,353 @@ INSERT INTO Product_Order (product_id, order_id, quantity) VALUES
 (SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nurul Iman')
 AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Ava Zhang')
 AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Swift Logistics')),20);
+
+--Feedback
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nur Aisyah%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nur Aisyah')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Mia Ng')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),
+DATE '2024-01-18', 4.5, 'Great product, fast delivery!');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Wong Siew Li%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Wong Siew Li')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Olivia Lee')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),
+DATE '2024-01-19', 3.0, 'Product quality could be better.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Wong Siew Li%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Wong Siew Li')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Mia Ng')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),
+DATE '2024-01-20', 5.0, 'Exceeded expectations! Highly recommend.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Wong Siew Li%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Wong Siew Li')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Charlotte Koh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),
+DATE '2024-01-21', 4.0, 'Good value for money.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Lee Chee Kiong%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Lee Chee Kiong')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Charlotte Koh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),
+DATE '2024-01-25', 2.5, 'Delivery was late, product was damaged.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Rajesh Kumar%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Rajesh Kumar')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Charlotte Koh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),
+DATE '2024-01-23', 4.2, 'Satisfied with the purchase.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Preeti Nair%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Preeti Nair')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Mia Ng')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Express Deliveries')),
+DATE '2024-01-24', 4.0, 'Satisfied.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Suresh Balakrishnan%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Suresh Balakrishnan')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'James Lim')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Urban Movers')),
+DATE '2024-01-26', 4.8, 'Excellent customer service!');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Preeti Nair%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Preeti Nair')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'James Lim')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Urban Movers')),
+DATE '2024-01-27', 4.5, 'Great product, fast delivery!');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Ali Ahmad%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Ali Ahmad')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Charlotte Koh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Swift Logistics')),
+DATE '2024-01-27',  5.0, 'Absolutely perfect! Would buy again.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Wong Siew Li%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Wong Siew Li')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Harper Teoh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Blue Ribbon Transport')),
+DATE '2024-01-28', 4.7, 'Very happy with my purchase.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Ahmad Faiz%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Ahmad Faiz')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Noah Wlison')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Blue Ribbon Transport')),
+DATE '2024-01-26', 2.0, 'Not worth the price.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Preeti Nair%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Preeti Nair')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Noah Wilson')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Blue Ribbon Transport')),
+DATE '2024-01-27', 3.5, 'Okay experience, average quality.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Ali Ahmad%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Ali Ahmad')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Isabella Tan')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Green Wheels')),
+DATE '2024-01-27', 4.9, 'Fantastic product, highly satisfied!');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Ahmad Faiz%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Ahmad Faiz')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Isabella Tan')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Green Wheels')),
+DATE '2024-01-28', 1.0, 'Terrible, will not recommend.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Hafizah Zahra%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Hafizah Zahra')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Ava Zhang')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Swift Logistics')),
+DATE '2024-01-30', 3.2, 'Neutral experience, could be better.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nurul Iman%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nurul Iman')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Noah Wilson')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Blue Ribbon Transport')),
+DATE '2024-01-28', 4.4, 'Good product, will consider again.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nurul Iman%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nurul Iman')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Isabella Tan')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Green Wheels')),
+DATE '2024-01-28', 5.0, 'Outstanding! Very impressed.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nurul Iman%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nurul Iman')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Harper Teoh')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Green Wheels')),
+DATE '2024-01-29', 4.1, 'Product is good, delivery was fast.');
+
+INSERT INTO Feedback (customer_id, order_id, feedback_date, rating, comments) VALUES
+((SELECT customer_id FROM Customer WHERE customer_name LIKE '%Nurul Iman%'),
+(SELECT order_id FROM Orders WHERE customer_id = (SELECT customer_id FROM Customer WHERE customer_name = 'Nurul Iman')
+AND agent_id = (SELECT agent_id FROM Agent WHERE agent_name = 'Ava Zhang')
+AND delivery_partner_id = (SELECT delivery_partner_id FROM Delivery_Partner WHERE partner_name = 'Swift Logistics')),
+DATE '2024-02-01', 3.8, 'Satisfactory but can improve in packaging.');
+
+
+
+--Branch Retail--
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ali Ahmad%'),
+'Candle Nuts Downtown', 'Bukit Bintang, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Nur Aisyah%'),
+'Candle Nuts Pavilion', 'Pavilion KL, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ahmad Faiz%'),
+'Candle Nuts Airport', 'KLIA Terminal 1, Sepang');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Siti Aminah%'),
+'Candle Nuts Uptown', 'Jalan Ampang, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Mohd Hafiz%'),
+'Candle Nuts Suburb', 'Bandar Utama, Petaling Jaya');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Nurul Iman%'),
+'Candle Nuts Center', 'Mid Valley Megamall, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Hafizah Zahra%'),
+'Candle Nuts Beach', 'Pantai Cenang, Langkawi');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Muhammad Arif%'),
+'Candle Nuts Industrial', 'Shah Alam Industrial Area, Selangor');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Aiman Hakim%'),
+'Candle Nuts University', 'Universiti Malaya, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Farah Aqilah%'),
+'Candle Nuts Tech', 'Cyberjaya, Selangor');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%John Smith%'),
+'Candle Nuts Highlands', 'Genting Highlands, Pahang');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Emily Wong%'),
+'Candle Nuts Heritage', 'Jonker Street, Melaka');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%William Chan%'),
+'Candle Nuts Luxury', 'Suria KLCC, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Olivia Ng%'),
+'Candle Nuts Riverside', 'Kuching Waterfront, Sarawak');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%James Koh%'),
+'Candle Nuts Countryside', 'Kampung Baru, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Isabella Tan%'),
+'Candle Nuts Station', 'KL Sentral, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Noah Lim%'),
+'Candle Nuts Park', 'Taman Tasik Perdana, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Charlotte Lau%'),
+'Candle Nuts Arena', 'Bukit Jalil Stadium, Kuala Lumpur');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Benjamin Ho%'),
+'Candle Nuts Hospital', 'Pantai Hospital, Bangsar');
+
+INSERT INTO Branch_Retail (employee_id, branch_name, location) VALUES
+((SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+'Candle Nuts Warehouse', 'Port Klang, Selangor');
+
+--Inventory Product--
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Downtown%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ali Ahmad%'),
+(SELECT product_id FROM Product WHERE product_name = 'Vanilla Scented Candle'),
+500);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Pavillion%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Nur Aisyah%'),
+(SELECT product_id FROM Product WHERE product_name = 'Lavender Soy Candle'),
+400);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Airport%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ahmad Faiz%'),
+(SELECT product_id FROM Product WHERE product_name = 'Rose Beeswax Candle'),
+350);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Uptown%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Siti Aminah%'),
+(SELECT product_id FROM Product WHERE product_name = 'Cinnamon Jar Candle'),
+600);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Suburb%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Mohd Hafiz%'),
+(SELECT product_id FROM Product WHERE product_name = 'Lemon Citronella Candle'),
+450);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Center%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Nurul Iman%'),
+(SELECT product_id FROM Product WHERE product_name = 'Eucalyptus Tea Light'),
+300);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Beach%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Hafizah Zahra%'),
+(SELECT product_id FROM Product WHERE product_name = 'Christmas Gift Set'),
+310);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Industrial%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Muhammad Arif%'),
+(SELECT product_id FROM Product WHERE product_name = 'Ocean Breeze Candle'),
+550);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts University%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Aiman Hakim%'),
+(SELECT product_id FROM Product WHERE product_name = 'Coffee Bean Candle'),
+700);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Tech%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Farah Aqilah%'),
+(SELECT product_id FROM Product WHERE product_name = 'Floral Blossom Candle'),
+450);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Highlands%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%John Smith%'),
+(SELECT product_id FROM Product WHERE product_name = 'Vanilla Scented Candle'),
+650);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Heritage%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Emily Wong%'),
+(SELECT product_id FROM Product WHERE product_name = 'Cinnamon Jar Candle'),
+500);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Luxury%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%William Chan%'),
+(SELECT product_id FROM Product WHERE product_name = 'Christmas Gift Set'),
+800);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Riverside%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Olivia Ng%'),
+(SELECT product_id FROM Product WHERE product_name = 'Floral Blossom Candle'),
+900);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Countryside%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%James Koh%'),
+(SELECT product_id FROM Product WHERE product_name = 'Lavender Soy Candle'),
+1000);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Station%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Isabella Tan%'),
+(SELECT product_id FROM Product WHERE product_name = 'Lemon Citronella Candle'),
+750);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Park%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Noah Lim%'),
+(SELECT product_id FROM Product WHERE product_name = 'Ocean Breeze Candle'),
+850);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Arena%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Charlotte Lau%'),
+(SELECT product_id FROM Product WHERE product_name = 'Rose Beeswax Candle'),
+600);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Hospital%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Benjamin Ho%'),
+(SELECT product_id FROM Product WHERE product_name = 'Eucalyptus Tea Light'),
+950);
+
+INSERT INTO Inventory_Product (branch_id, employee_id, product_id, quantity) VALUES
+((SELECT  branch_id FROM Branch_Retail WHERE branch_name LIKE '%Candle Nuts Warehouse%'),
+(SELECT employee_id FROM Employee WHERE employee_name LIKE '%Ethan Yeo%'),
+(SELECT product_id FROM Product WHERE product_name = 'Coffee Bean Candle'),
+400);
+
        
